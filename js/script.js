@@ -12,20 +12,26 @@ console.log(eMail);
 
 
 
-// variabile di messaggio/risultato
-let searchEmail = false;
+// variabile di stato o flag
+let found = false;
 
 
 // verifica della presenza dell'e-mail nella lista degli autorizzati all'accesso
 
 for (let i = 0; i < listGuests.length; i++) {
 
-    let ifEmailPresent = listGuests [i];
-
-    if (eMail === ifEmailPresent)
-        console.log("Puoi accedere");
+    if (eMail === listGuests[i]) {
+        found = true;
+    }
         
-    if (eMail !== ifEmailPresent)
-        console.log("Non puoi accedere");
+}
+
+if (!found) {
+
+    console.log("Non puoi accedere");
+
+} else {
+
+    console.log("Puoi accedere");
 
 }
