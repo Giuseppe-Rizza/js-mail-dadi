@@ -5,9 +5,9 @@ const numbersDice = [1, 2, 3, 4, 5, 6];
 console.log(numbersDice);
 
 
-let userNumber = Math.floor(Math.random()*7)
+let userNumber = Math.floor(Math.random()*6) + 1;
 
-let pcNumber = Math.floor(Math.random()*7)
+let pcNumber = Math.floor(Math.random()*6) + 1;
 
 console.log(userNumber);
 
